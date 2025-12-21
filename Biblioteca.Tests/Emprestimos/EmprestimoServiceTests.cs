@@ -30,8 +30,7 @@ namespace Biblioteca.Tests.Emprestimos
             var service = new EmprestimoService(
                 emprestimoRepositoryMock.Object,
                 livroRepositoryMock.Object,
-                pessoaRepositoryMock.Object,
-                uowRepositoryMock.Object
+                pessoaRepositoryMock.Object
             );
 
             var emprestimo = new Emprestimo(idPessoa, idLivro);
